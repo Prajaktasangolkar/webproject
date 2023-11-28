@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumbai City Tourism</title>
+    <style>
+        body {
+            background-color: #fffbed;
+        }
+
+        h1 {
+            text-shadow: 1px 1.5px black;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            /* Adjust the size as needed */
+            height: auto;
+            /* Maintain aspect ratio */
+            margin-right: 10px;
+            /* Add spacing between logo and heading */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        table,
+        tr,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            justify-content: center;
+
+        }
+
+        p {
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        #gateway h2 {
+            text-align: center;
+        }
+        .footer {
+            background-color: #333333d6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Heading contain logo and name of city  -->
+    {{>header}}
+    <!-- main body section start -->
+    <!-- section 1: small Info  -->
+    <section class="city-details">
+        <h2>Welcome to Mumbai</h2>
+        <div>
+
+            <p>
+                Mumbai, the capital of <strong>Maharashtra</strong> , is <strong>India's</strong> most populous city,
+                situated on a narrow peninsula along the
+                Arabian Sea. With over 20 million residents, it's one of the world's most densely populated urban
+                centers.
+                Mumbai is a global financial hub, housing major financial institutions and hosting the Bombay Stock
+                Exchange. The city's skyline is adorned with iconic landmarks like the <u><a
+                        href="https://en.wikipedia.org/wiki/Gateway_of_India">Gateway of India</a> </u>, <u> <a
+                        href="https://en.wikipedia.org/wiki/Marine_Drive,_Mumbai">Marine Drive</a></u>, and
+                the <u><a href="https://en.wikipedia.org/wiki/Chhatrapati_Shivaji_Terminus">Chhatrapati Shivaji Maharaj
+                        Terminus</a></u>. It's the epicenter of the Bollywood film industry, producing a
+                substantial portion of India's movies. Mumbai's cultural diversity shines through its lively
+                celebrations of
+                festivals from various religions, and its culinary scene is renowned for its street food and
+                international
+                cuisine.
+            </p>
+        </div>
+    </section>
+    <!-- section2: photos were we will go and explore mumbai city -->
+    <section class="city-images">
+        <h2>Explore Mumbai</h2>
+        <table>
+            <!-- rows and columns -->
+            <tr>
+                <td>
+                    <a href="" target="_blank">
+                        <img src="https://images.unsplash.com/photo-1566552881560-0be862a7c445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80"
+                            alt="Mumbai Image 1" height="250px" width="250px">
+                    </a>
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1598434192043-71111c1b3f41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG11bWJhaSUyMGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Mumbai Image 2" height="250px" width="250px">
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1532633130319-f16ab0a3a9c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG11bWJhaSUyMGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Mumbai Image 3" height="250px" width="250px">
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1595658658481-d53d3f999875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG11bWJhaSUyMGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Mumbai Image 3" height="250px" width="250px">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80"
+                        alt="Mumbai Image 3" height="250px" width="250px">
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1567359485688-f39861174e25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1854&q=80"
+                        alt="Mumbai Image 4" height="250px" width="250px">
+                </td>
+
+                <td>
+                    <img src="https://images.unsplash.com/photo-1557846920-5efd5c916286?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fG11bWJhaSUyMGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Mumbai Image 3" height="250px" width="250px">
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1562077790-b946f1c6106e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fG11bWJhaSUyMGNpdHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                        alt="Mumbai Image 3" height="250px" width="250px">
+                </td>
+
+            </tr>
+        </table>
+    </section>
+    <!-- section 3 extra we re the table in which most attractive places are given  -->
+    <section>
+        <h2>Explore Mumbai's Top Attractions</h2>
+
+        <table class="attraction-table">
+            <tr class="attraction-table">
+                <td>
+                    <!-- there are 3 section in each column 1 section is there  -->
+                    <section id="gateway">
+                        <h2>Gateway of India</h2>
+                        <hr>
+                        <p>The Gateway of India is an iconic monument in Mumbai. It was built in 1924 to commemorate the
+                            visit of King George and Queen Mary to Mumbai. It's a must-visit attraction for tourists.
+                        </p>
+                    </section>
+                </td>
+                <td>
+                    <section id="gateway">
+                        <h2>Marine Drive</h2>
+                        <hr>
+                        <p>Marine Drive is a scenic promenade in South Mumbai. It's a perfect place to take a leisurely
+                            stroll and enjoy the stunning view of the Arabian Sea. Don't miss the beautiful sunset here.
+                        </p>
+                    </section>
+                </td>
+                <td>
+                    <section id="gateway">
+                        <h2>Elephanta Caves</h2>
+                        <hr>
+                        <p>The Elephanta Caves are a UNESCO World Heritage Site located on Elephanta Island. These
+                            rock-cut caves contain sculptures and temples dedicated to Lord Shiva, making it a
+                            fascinating .</p>
+                    </section>
+                </td>
+            </tr>
+        </table>
+        <!-- section 4: Iframe section is there were about page is linked  -->
+        <section class="iframe-section" style="box-shadow: 4px solid black;"></section>>
+            <h2>More Information</h2>
+            <iframe src="about.html"  width="650" height="300" ></iframe>
+        </section>
+        <br>
+        <br>
+    <!-- last section is footer -->
+    <!-- main : Footer is added  -->
+    <!-- In footer have links and mail ,contact No -->
+    {{>footer}}
+</body>
+
+</html>
